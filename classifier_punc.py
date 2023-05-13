@@ -32,6 +32,7 @@ def train_model(text_data, labels):
     ])
     text_pipeline.fit(text_data, labels)
     return text_pipeline
+    
 
 def predict_new_text(model, new_text_data):
     predictions = model.predict(new_text_data)

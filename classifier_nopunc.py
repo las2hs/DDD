@@ -6,6 +6,7 @@ from sklearn.pipeline import Pipeline
 def load_data(file_path):
     with open(file_path, 'r') as f:
         return f.read()
+        
 
 def train_model(text_data, labels):
     text_pipeline = Pipeline([
